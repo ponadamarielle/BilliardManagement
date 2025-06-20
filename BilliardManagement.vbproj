@@ -73,11 +73,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Assign.Designer.vb">
+      <DependentUpon>Assign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assign.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="History.Designer.vb">
+      <DependentUpon>History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.Designer.vb">
@@ -101,10 +113,34 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="payment.Designer.vb">
+      <DependentUpon>payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservation.Designer.vb">
+      <DependentUpon>Reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableManagement.Designer.vb">
+      <DependentUpon>TableManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TableManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Assign.resx">
+      <DependentUpon>Assign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
@@ -114,6 +150,15 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservation.resx">
+      <DependentUpon>Reservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableManagement.resx">
+      <DependentUpon>TableManagement.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +181,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\american-pool.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
