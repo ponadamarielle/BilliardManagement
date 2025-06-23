@@ -131,6 +131,12 @@
     <Compile Include="TableManagement.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ViewReservation.Designer.vb">
+      <DependentUpon>ViewReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Assign.resx">
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TableManagement.resx">
       <DependentUpon>TableManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReservation.resx">
+      <DependentUpon>ViewReservation.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
