@@ -27,4 +27,9 @@
         DataGridView1.Rows.Add(row)
     End Sub
 
+    Private Sub btn_back_Click(sender As Object, e As EventArgs) Handles btn_back.Click
+        Dim reservation As New Reservation()
+        reservation.Show()
+        Hide()
+    End Sub
 End Class

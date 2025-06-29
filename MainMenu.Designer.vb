@@ -108,16 +108,17 @@ Partial Class MainMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(982, 553)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btn_table)
         Me.Controls.Add(Me.btn_reservation)
         Me.Controls.Add(Me.btn_logout)
         Me.Controls.Add(Me.btn_history)
         Me.Controls.Add(Me.lbl_main)
         Me.Controls.Add(Me.pic1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MainMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MainMenu"
         CType(Me.pic1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

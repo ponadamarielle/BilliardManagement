@@ -1,6 +1,5 @@
 ﻿Public Class Reservation
 
-    ' Shared instance of ViewReservation (one single shared form)
     Private Shared _viewReservationInstance As ViewReservation = Nothing
 
     Public Shared ReadOnly Property ViewReservationInstance() As ViewReservation
@@ -14,22 +13,36 @@
     End Property
 
     Private Sub btn_confirm_Click(sender As Object, e As EventArgs) Handles btn_confirm.Click
+        If String.IsNullOrWhiteSpace(txtbox_name.Text) Then
+            MessageBox.Show("Please enter the name.", "Missing Name", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        If String.IsNullOrWhiteSpace(txtbox_contact.Text) Then
+            MessageBox.Show("Please enter the contact number.", "Missing Contact", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        If cmb_table.SelectedIndex = -1 OrElse String.IsNullOrWhiteSpace(cmb_table.Text) Then
+            MessageBox.Show("Please select a table.", "Missing Table", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
         Dim result As DialogResult = MessageBox.Show(
-            "Are you sure you want to confirm this reservation?",
-            "Confirm Reservation",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question
-        )
+        "Are you sure you want to confirm this reservation?",
+        "Confirm Reservation",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    )
 
         If result = DialogResult.Yes Then
-
             ViewReservationInstance.AddReservation(
-                txtbox_name.Text,
-                txtbox_contact.Text,
-                cmb_table.Text,
-                dtp_date.Value.ToShortDateString(),
-                dtp_time.Value.ToShortTimeString()
-            )
+            txtbox_name.Text,
+            txtbox_contact.Text,
+            cmb_table.Text,
+            dtp_date.Value.ToShortDateString(),
+            dtp_time.Value.ToShortTimeString()
+        )
 
             MessageBox.Show("Reservation successfully added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
@@ -41,17 +54,18 @@
         End If
     End Sub
 
+
     Private Sub btn_back_Click(sender As Object, e As EventArgs) Handles btn_back.Click
         Dim main As New MainMenu()
         main.Show()
-        Me.Hide()
+        Hide()
     End Sub
 
     Private Sub btn_reservations_Click(sender As Object, e As EventArgs) Handles btn_reservations.Click
 
         Dim form As ViewReservation = ViewReservationInstance
         form.Show()
-        form.BringToFront()
+        Hide()
     End Sub
 
 End Class

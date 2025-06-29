@@ -5,4 +5,14 @@
         main.Show()
         Hide()
     End Sub
+
+    Private Sub History_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        DataGridView_history.Columns.Clear()
+
+        DataGridView_history.DataSource = Nothing
+        DataGridView_history.DataSource = SessionStore.HistoryList
+    End Sub
+
+
 End Class

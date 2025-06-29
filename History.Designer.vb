@@ -23,41 +23,40 @@ Partial Class History
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGridView_history = New System.Windows.Forms.DataGridView()
         Me.column_date = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Table = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.totalHours = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Payment = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btn_back = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView_history, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(289, 15)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(385, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(143, 31)
+        Me.Label1.Size = New System.Drawing.Size(170, 38)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "HISTORY"
         '
-        'DataGridView1
+        'DataGridView_history
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToOrderColumns = True
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.column_date, Me.Table, Me.totalHours, Me.Payment})
-        Me.DataGridView1.Location = New System.Drawing.Point(17, 59)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(702, 331)
-        Me.DataGridView1.TabIndex = 1
+        Me.DataGridView_history.AllowUserToAddRows = False
+        Me.DataGridView_history.AllowUserToOrderColumns = True
+        Me.DataGridView_history.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView_history.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.DataGridView_history.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView_history.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.column_date, Me.Table, Me.totalHours, Me.Payment})
+        Me.DataGridView_history.Location = New System.Drawing.Point(23, 73)
+        Me.DataGridView_history.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DataGridView_history.Name = "DataGridView_history"
+        Me.DataGridView_history.RowHeadersWidth = 51
+        Me.DataGridView_history.RowTemplate.Height = 24
+        Me.DataGridView_history.Size = New System.Drawing.Size(936, 407)
+        Me.DataGridView_history.TabIndex = 1
         '
         'column_date
         '
@@ -86,34 +85,35 @@ Partial Class History
         'btn_back
         '
         Me.btn_back.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_back.Location = New System.Drawing.Point(648, 407)
-        Me.btn_back.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_back.Location = New System.Drawing.Point(864, 501)
+        Me.btn_back.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_back.Name = "btn_back"
-        Me.btn_back.Size = New System.Drawing.Size(80, 32)
+        Me.btn_back.Size = New System.Drawing.Size(107, 39)
         Me.btn_back.TabIndex = 15
         Me.btn_back.Text = "Back"
         Me.btn_back.UseVisualStyleBackColor = True
         '
         'History
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(736, 449)
+        Me.ClientSize = New System.Drawing.Size(981, 553)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btn_back)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DataGridView_history)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "History"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "History"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView_history, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DataGridView_history As DataGridView
     Friend WithEvents btn_back As Button
     Friend WithEvents column_date As DataGridViewTextBoxColumn
     Friend WithEvents Table As DataGridViewTextBoxColumn

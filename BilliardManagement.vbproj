@@ -85,6 +85,7 @@
     <Compile Include="History.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="HistoryRecord.vb" />
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +126,7 @@
     <Compile Include="Reservation.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SessionStore.vb" />
     <Compile Include="TableManagement.Designer.vb">
       <DependentUpon>TableManagement.vb</DependentUpon>
     </Compile>

@@ -42,9 +42,10 @@ Partial Class Login
         Me.lbl_username.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lbl_username.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_username.ForeColor = System.Drawing.Color.Navy
-        Me.lbl_username.Location = New System.Drawing.Point(72, 269)
+        Me.lbl_username.Location = New System.Drawing.Point(96, 331)
+        Me.lbl_username.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_username.Name = "lbl_username"
-        Me.lbl_username.Size = New System.Drawing.Size(141, 29)
+        Me.lbl_username.Size = New System.Drawing.Size(179, 35)
         Me.lbl_username.TabIndex = 2
         Me.lbl_username.Text = "Username: "
         '
@@ -55,9 +56,10 @@ Partial Class Login
         Me.lbl_pass.BackColor = System.Drawing.Color.Transparent
         Me.lbl_pass.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_pass.ForeColor = System.Drawing.Color.Navy
-        Me.lbl_pass.Location = New System.Drawing.Point(72, 342)
+        Me.lbl_pass.Location = New System.Drawing.Point(96, 421)
+        Me.lbl_pass.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_pass.Name = "lbl_pass"
-        Me.lbl_pass.Size = New System.Drawing.Size(140, 29)
+        Me.lbl_pass.Size = New System.Drawing.Size(177, 35)
         Me.lbl_pass.TabIndex = 3
         Me.lbl_pass.Text = "Password: "
         '
@@ -65,22 +67,24 @@ Partial Class Login
         '
         Me.tbx_user.AccessibleName = ""
         Me.tbx_user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tbx_user.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbx_user.Location = New System.Drawing.Point(230, 268)
+        Me.tbx_user.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbx_user.Location = New System.Drawing.Point(307, 330)
+        Me.tbx_user.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbx_user.Multiline = True
         Me.tbx_user.Name = "tbx_user"
-        Me.tbx_user.Size = New System.Drawing.Size(223, 30)
+        Me.tbx_user.Size = New System.Drawing.Size(297, 36)
         Me.tbx_user.TabIndex = 4
         '
         'tbx_pass
         '
         Me.tbx_pass.AccessibleName = ""
-        Me.tbx_pass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbx_pass.Location = New System.Drawing.Point(230, 341)
+        Me.tbx_pass.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbx_pass.Location = New System.Drawing.Point(307, 420)
+        Me.tbx_pass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbx_pass.Multiline = True
         Me.tbx_pass.Name = "tbx_pass"
         Me.tbx_pass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.tbx_pass.Size = New System.Drawing.Size(223, 30)
+        Me.tbx_pass.Size = New System.Drawing.Size(296, 36)
         Me.tbx_pass.TabIndex = 5
         '
         'btn_login
@@ -91,17 +95,18 @@ Partial Class Login
         Me.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_login.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_login.ForeColor = System.Drawing.Color.White
-        Me.btn_login.Location = New System.Drawing.Point(181, 407)
+        Me.btn_login.Location = New System.Drawing.Point(241, 501)
+        Me.btn_login.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_login.Name = "btn_login"
-        Me.btn_login.Size = New System.Drawing.Size(168, 36)
+        Me.btn_login.Size = New System.Drawing.Size(224, 44)
         Me.btn_login.TabIndex = 6
         Me.btn_login.Text = "LOGIN"
         Me.btn_login.UseVisualStyleBackColor = False
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(34, 36)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox2.Location = New System.Drawing.Point(45, 44)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(0, 0)
         Me.PictureBox2.TabIndex = 8
@@ -112,17 +117,18 @@ Partial Class Login
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(524, 526)
+        Me.PictureBox1.Size = New System.Drawing.Size(699, 647)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(524, 526)
+        Me.ClientSize = New System.Drawing.Size(699, 647)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.btn_login)
         Me.Controls.Add(Me.tbx_pass)
@@ -131,6 +137,8 @@ Partial Class Login
         Me.Controls.Add(Me.lbl_username)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MaximizeBox = False
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
